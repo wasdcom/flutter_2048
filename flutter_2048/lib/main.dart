@@ -113,128 +113,172 @@ class MyApp extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            SizedBox(
-              width: 500,
-              height: 500,
-              child: Container(
-                decoration: const BoxDecoration(
-                    color: Color.fromRGBO(187, 173, 160, 1)),
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(
-                    vertical: 30,
-                    horizontal: 30,
-                  ),
-                  child: Column(
-                    children: [
-                      Expanded(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            BoxWidget(
-                              number: "",
-                              isreversal: true,
-                              color: Color(0xFFCDC1B3),
-                            ),
-                            BoxWidget(
-                              number: "2",
-                              isreversal: true,
-                              color: Color(0xFFEEE4DA),
-                            ),
-                            BoxWidget(
-                              number: "",
-                              isreversal: true,
-                              color: Color(0xFFCDC1B3),
-                            ),
-                            BoxWidget(
-                              number: "",
-                              isreversal: true,
-                              color: Color(0xFFCDC1B3),
-                            ),
-                          ],
-                        ),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.green,
+                ),
+                onPressed: () {},
+                child: const Icon(Icons.keyboard_arrow_up)),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              children: [
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.yellow,
+                    ),
+                    onPressed: () {},
+                    child: const Icon(Icons.keyboard_arrow_left)),
+                const SizedBox(
+                  width: 20,
+                ),
+                SizedBox(
+                  width: 380,
+                  height: 380,
+                  child: Container(
+                    decoration: const BoxDecoration(
+                        color: Color.fromRGBO(187, 173, 160, 1)),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 30,
+                        horizontal: 30,
                       ),
-                      Expanded(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            BoxWidget(
-                              number: "2",
-                              isreversal: true,
-                              color: Color(0xFFEEE4DA),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                BoxWidget(
+                                  number: "",
+                                  isreversal: true,
+                                  color: Color(0xFFCDC1B3),
+                                ),
+                                BoxWidget(
+                                  number: "2",
+                                  isreversal: true,
+                                  color: Color(0xFFEEE4DA),
+                                ),
+                                BoxWidget(
+                                  number: "",
+                                  isreversal: true,
+                                  color: Color(0xFFCDC1B3),
+                                ),
+                                BoxWidget(
+                                  number: "",
+                                  isreversal: true,
+                                  color: Color(0xFFCDC1B3),
+                                ),
+                              ],
                             ),
-                            BoxWidget(
-                              number: "8",
-                              isreversal: false,
-                              color: Color(0xFFEFB377),
+                          ),
+                          Expanded(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                BoxWidget(
+                                  number: "2",
+                                  isreversal: true,
+                                  color: Color(0xFFEEE4DA),
+                                ),
+                                BoxWidget(
+                                  number: "8",
+                                  isreversal: false,
+                                  color: Color(0xFFEFB377),
+                                ),
+                                BoxWidget(
+                                  number: "",
+                                  isreversal: true,
+                                  color: Color(0xFFCDC1B3),
+                                ),
+                                BoxWidget(
+                                  number: "",
+                                  isreversal: true,
+                                  color: Color(0xFFCDC1B3),
+                                ),
+                              ],
                             ),
-                            BoxWidget(
-                              number: "",
-                              isreversal: true,
-                              color: Color(0xFFCDC1B3),
+                          ),
+                          Expanded(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                BoxWidget(
+                                    number: "4",
+                                    isreversal: true,
+                                    color: Color(0xFFEEE0C5)),
+                                BoxWidget(
+                                    number: "32",
+                                    isreversal: false,
+                                    color: Color(0xFFF77C5A)),
+                                BoxWidget(
+                                    number: "32",
+                                    isreversal: false,
+                                    color: Color(0xFFF77C5A)),
+                                BoxWidget(
+                                  number: "2",
+                                  isreversal: true,
+                                  color: Color(0xFFEEE4DA),
+                                ),
+                              ],
                             ),
-                            BoxWidget(
-                              number: "",
-                              isreversal: true,
-                              color: Color(0xFFCDC1B3),
+                          ),
+                          Expanded(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                BoxWidget(
+                                  number: "8",
+                                  isreversal: false,
+                                  color: Color(0xFFEFB377),
+                                ),
+                                BoxWidget(
+                                  number: "2",
+                                  isreversal: true,
+                                  color: Color(0xFFEEE4DA),
+                                ),
+                                BoxWidget(
+                                    number: "4",
+                                    isreversal: true,
+                                    color: Color(0xFFEEE0C5)),
+                                BoxWidget(
+                                  number: "8",
+                                  isreversal: false,
+                                  color: Color(0xFFEFB377),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
-                      Expanded(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            BoxWidget(
-                                number: "4",
-                                isreversal: true,
-                                color: Color(0xFFEEE0C5)),
-                            BoxWidget(
-                                number: "32",
-                                isreversal: false,
-                                color: Color(0xFFF77C5A)),
-                            BoxWidget(
-                                number: "32",
-                                isreversal: false,
-                                color: Color(0xFFF77C5A)),
-                            BoxWidget(
-                              number: "2",
-                              isreversal: true,
-                              color: Color(0xFFEEE4DA),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Expanded(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            BoxWidget(
-                              number: "8",
-                              isreversal: false,
-                              color: Color(0xFFEFB377),
-                            ),
-                            BoxWidget(
-                              number: "2",
-                              isreversal: true,
-                              color: Color(0xFFEEE4DA),
-                            ),
-                            BoxWidget(
-                                number: "4",
-                                isreversal: true,
-                                color: Color(0xFFEEE0C5)),
-                            BoxWidget(
-                              number: "8",
-                              isreversal: false,
-                              color: Color(0xFFEFB377),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ),
-            )
+                const SizedBox(
+                  width: 20,
+                ),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {},
+                    child: const Icon(Icons.keyboard_arrow_right)),
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.red,
+                ),
+                onPressed: () {},
+                child: const Icon(Icons.keyboard_arrow_down)),
           ],
         ),
       ),
